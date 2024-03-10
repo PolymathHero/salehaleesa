@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .BIG-flex-container {
+            display: flex;
+        }
+
+        .SMALL-flex-container {
+            width: 50%;
+            display: flex;
+            background-color: red;
+            overflow: scroll;
+        }
+
+        .flex-item {
+            width: 100%;
+            flex-shrink: 0;
+            height: 300px;
+        }
+
+        .flex-item-1 {
+            background-color: blue;
+        }
+
+        .flex-item-2 {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="BIG-flex-container">
+        <div class="SMALL-flex-container">
+            <div class="flex-item flex-item-1">
+            </div>
+            <div class="flex-item flex-item-2"></div>
+        </div>
+        <div class="SMALL-flex-container">
+            <div class="flex-item flex-item-1">
+            </div>
+            <div class="flex-item flex-item-2"></div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback App | POLYMATH HERO</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- BEGIN FIREBASE -->
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        import { getAuth } from "firebase/auth";
+
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyAI1uJWlgGA5_1tyaCZLey9-oLh4QuHfxs",
+            authDomain: "feedback-e9e89.firebaseapp.com",
+            projectId: "feedback-e9e89",
+            storageBucket: "feedback-e9e89.appspot.com",
+            messagingSenderId: "574347826932",
+            appId: "1:574347826932:web:8d50e92df3c2a25619b0a1",
+            measurementId: "G-YDBGYHDYEC"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+
+        // Initialize Firebase Authentication and get a reference to the service
+        const auth = getAuth(app);
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/ui/6.1.0/firebase-ui-auth__en.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/6.1.0/firebase-ui-auth.css" />
+    <!-- END FIREBASE -->
+</head>
+
+<body id="body-id">
+    <!--    <div class="announcement-bar">Just in: The new Ko-fi 2024 Collection. <a href="https://ko-fi.com/polymathhero/shop" target="_blank">Shop now.</a></div>-->
+    <header>
+        <!-- BEGIN MENU -->
+        <div id="menu">
+            <div id="menu-bar" onclick="menuOnClick()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </div>
+            <nav class="nav" id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="newswire.html">Blog</a></li>
+                    <li><a href="https://ko-fi.com/chicaffair/shop">Products</a></li>
+                    <!--<li><a href="#">RegalRack</a></li>
+          <li><a href="#">Uplift</a></li>-->
+                </ul>
+                <hr>
+                <ul>
+                    <li class="menu-secondary-list-item"><a href="about-page.html">About us</a></li>
+                    <li class="menu-secondary-list-item"><a href="follow-us.html">Follow us</a></li>
+                    <li class="menu-secondary-list-item"><a href="contact-us.html">Contact us</a></li>
+                </ul>
+                <hr>
+                <ul>
+                    <li class="menu-tertiary-list-item"><a href="return-policy.html">Returns</a></li>
+                    <li class="menu-tertiary-list-item"><a href="shipping-policy.html">Shipping</a></li>
+                    <li class="menu-tertiary-list-item"><a href="privacy-policy.html">Privacy policy</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="menu-bg" id="menu-bg"></div>
+        <!-- END MENU -->
+
+        <p id="herobrandname-p-block"><a id="hero" href="index.html">POLYMATH HERO</a></p>
+    </header>
+
+    <div class="page-container">
+        <p id="page-title-p">Feedback App</p>
+
+        <div class="border-solid-black">
+            <!-- Add a button to trigger the assignment -->
+            <button id="assignButton" onclick="assignWebsite()">Assign Website</button>
+
+            <!-- Display the assigned website -->
+            <p id="assignedWebsite"></p>
+        </div>
+
+        <!-- The surrounding HTML is left untouched by FirebaseUI.
+     Your app may use that space for branding, controls and other customizations.-->
+        <h1>Welcome to My Awesome App</h1>
+        <div id="firebaseui-auth-container"></div>
+        <div id="loader">Loading...</div>
+    </div>
+
+    <!-- BEGIN SCRIPTS -->
+    <script>
+            var uiConfig = {
+        signInSuccessUrl: '<url-to-redirect-to-on-success>',
+        signInOptions: [
+            firebase.auth.EmailAuthProvider.PROVIDER_ID
+        ],
+    };
+
+    var ui = new firebaseui.auth.AuthUI(firebase.auth());
+    ui.start('#firebaseui-auth-container', uiConfig);
+    
+</script>
+    <!-- BEGIN CALCULATE #MENU-BG HEIGHT BY REDUCING HEADER HEIGHT FROM 100VH-->
+    <script>
+        // Function to adjust menu-bg height based on header height
+        function adjustMenuBgHeight() {
+            var headerHeight = document.querySelector('header').offsetHeight;
+            document.getElementById('menu-bg').style.height = `calc(100vh - ${headerHeight}px)`;
+        }
+
+        // Call the function on page load
+        window.addEventListener('load', adjustMenuBgHeight);
+
+        // Call the function on window resize to handle responsive design
+        window.addEventListener('resize', adjustMenuBgHeight);
+    </script>
+    <!-- END CALCULATE #MENU-BG HEIGHT BY REDUCING HEADER HEIGHT FROM 100VH-->
+
+
+    <!-- BEGIN MENU SCRIPT-->
+    <script>function menuOnClick() {
+            document.getElementById("menu-bar").classList.toggle("change");
+            document.getElementById("nav").classList.toggle("change-nav");
+            document.getElementById("menu-bg").classList.toggle("change-bg");
+
+            // Toggle menu-opened class on body
+            document.body.classList.toggle("menu-opened");
+        }</script>
+    <!-- END MENU SCRIPT-->
+
+    <script>
+        window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
+
+    <script>
+        function assignWebsite() {
+            fetch('./34-assign-a-website.js')
+                .then(response => response.text())
+                .then(script => {
+                    // Create a script element
+                    const scriptElement = document.createElement('script');
+
+                    // Set the script content to the fetched script
+                    scriptElement.textContent = script;
+
+                    // Append the script element to the document
+                    document.head.appendChild(scriptElement);
+
+                    // Call the getRandomWebsite function from the imported script
+                    const assignedWebsite = getRandomWebsite();
+
+                    // Display the assigned website
+                    document.getElementById('assignedWebsite').innerText = 'Assigned Website: ' + assignedWebsite;
+                })
+                .catch(error => console.error('Error loading script:', error));
+        }
+    </script>
+    <!-- END SCRIPTS -->
+
+</body>
+
+</html>

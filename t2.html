@@ -1,0 +1,2220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The official homepage for the official website for Polymath Hero.">
+    <title>POLYMATH HERO Official International Website</title>
+    <style>
+        /* styles.css */
+
+        html {
+            overflow-y: scroll;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        /* CSS Reset */
+        html,
+        span,
+        applet,
+        object,
+        iframe,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        abbr,
+        acronym,
+        address,
+        big,
+        cite,
+        code,
+        del,
+        dfn,
+        em,
+        img,
+        ins,
+        kbd,
+        q,
+        s,
+        samp,
+        small,
+        strike,
+        strong,
+        sub,
+        sup,
+        tt,
+        var,
+        b,
+        u,
+        i,
+        center,
+        dl,
+        dt,
+        dd,
+        ol,
+        fieldset,
+        form,
+        label,
+        legend,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td,
+        article,
+        aside,
+        canvas,
+        details,
+        embed,
+        figure,
+        figcaption,
+        footer,
+        hgroup,
+        menu,
+        output,
+        ruby,
+        section,
+        summary,
+        time,
+        mark,
+        audio,
+        video {
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+
+        h1 {
+            line-height: 2;
+        }
+
+        .black-colored-visited-links {
+            text-decoration: underline;
+        }
+
+        ol,
+        ul {
+            list-style: none;
+        }
+
+        @font-face {
+            font-family: 'HKGrotesk-SemiBold';
+            src: url('fonts/HKGrotesk-SemiBold.otf') format('opentype');
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'HKGrotesk-Medium';
+            src: url('fonts/HKGrotesk-Medium.otf') format('opentype');
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'HKGrotesk-Regular';
+            src: url('fonts/HKGrotesk-Regular.otf') format('opentype');
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'HKGrotesk-Italic';
+            src: url('fonts/HKGrotesk-Italic.otf') format('opentype');
+            font-display: swap;
+        }
+
+        .news-container .bold {
+            font-family: 'HKGrotesk-SemiBold', Arial, sans-serif;
+        }
+
+        body {
+            font-family: 'HKGrotesk-Regular', Arial, sans-serif;
+            background-color: white;
+        }
+
+        button {
+            font-family: 'HKGrotesk-Regular', Arial, sans-serif;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 3;
+            max-width: 100vw;
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+            transition: all .3s cubic-bezier(.39, .575, .565, 1);
+            border: 0px solid red;
+        }
+
+        .non-index-header {
+            border-bottom: 1px solid #ececec;
+            background-color: white;
+        }
+
+        .transparent-header-at-first a {
+            color: white;
+        }
+
+        .product-page-header a {
+            color: black;
+        }
+
+        .non-index-header a {
+            color: black;
+        }
+
+        header.scrolled {
+            background-color: white;
+            border-bottom: 1px solid #ececec;
+        }
+
+        header.scrolled a {
+            color: black;
+        }
+
+        .header-hero-brand-name-span-container-div {
+            position: absolute;
+            border: 0px solid greenyellow;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            left: 0;
+        }
+
+        #herobrandname-p-block {
+            text-align: center;
+            background-color: transparent;
+            padding: 0;
+            font-family: 'HKGrotesk-SemiBold', sans-serif;
+            font-size: 2em;
+            letter-spacing: 1px;
+            z-index: 20000;
+            line-height: 1;
+            border: 0px solid red;
+        }
+
+        .header-icon-img path {
+            fill: white;
+        }
+
+        .header-icon-img.scrolled path {
+            fill: black;
+        }
+
+        .header-icon-img.on-header-hover path {
+            fill: black;
+        }
+
+        .on-menu-click-header-icon path {
+            fill: black;
+        }
+
+        /* MEDIA QUERY for screens with a maximum width of 768px (typical for mobile devices) */
+        @media (max-width: 768px) {
+
+            header {
+                padding: 0.45rem;
+            }
+
+            #herobrandname-p-block {
+                font-size: 1.3rem;
+                /* Adjust the font size for mobile screens as needed */
+                padding: 0.8rem;
+                text-align: center;
+                background-color: transparent;
+            }
+
+            .change-nav {
+                left: 0;
+                width: 100vw;
+            }
+
+            .menu-bg {
+                transition: 0.15s;
+            }
+
+            .change-bg {
+                transition: 0.15s;
+            }
+
+            .email-us-background {
+                display: none;
+            }
+
+            .feed-post-container {
+                padding: 2rem 2rem 4rem;
+            }
+
+            .feed-post-container .article-title {
+                font-size: 1.2rem;
+                line-height: 1.75rem;
+            }
+
+            .feed-post-image {
+                max-height: 80vh;
+            }
+
+            .announcement-bar {
+                padding-top: 0.5vh;
+                padding-bottom: 0.5vh;
+            }
+
+            picture {
+                max-height: 80vh;
+            }
+
+            .news-container {
+                padding-top: 3.7rem;
+            }
+
+            /*BEGIN PRODUCT LISTING PAGE*/
+
+            .product-cards-container-div {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .product-card-div {
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                width: 50%;
+                border: 0px solid red;
+            }
+
+            .product-card-product-name-h2 {
+                line-height: 1rem;
+                letter-spacing: 0.025rem;
+            }
+
+            .product-card-img {
+                display: block;
+                width: 100%;
+            }
+
+            .product-card-a-pc {
+                color: black;
+                position: relative;
+                border: 0px solid red;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+            }
+
+            .product-card-img-container-div {
+                background-image: url('gradient-background.svg');
+                background-size: cover;
+                display: flex;
+                overflow-x: auto;
+                scroll-snap-type: x mandatory;
+            }
+
+            .product-card-img-container-div img {
+                flex: 0 0 auto;
+                width: 100%;
+                scroll-snap-align: start;
+            }
+
+            .product-card-button-layer-div-img-container-div {
+                background-image: url('gradient-background.svg');
+                background-size: cover;
+                display: flex;
+                overflow-x: auto;
+                scroll-snap-type: x mandatory;
+            }
+
+            .product-card-button-layer-div-img-container-div img {
+                flex: 0 0 auto;
+                width: 100%;
+                scroll-snap-align: start;
+            }
+
+            .product-card-button-layer-div {
+                display: none;
+            }
+
+            .product-card-text-details-div {
+                background-color: white;
+                width: 100%;
+            }
+
+            .product-card-text-details-div-inner-div {
+                padding-left: 1rem;
+            }
+
+            /*END PRODUCT LISTING PAGE*/
+
+            /*BEGIN PRODUCT PAGE*/
+            .image-section-on-mobile {
+                display: flex;
+            }
+
+            .image-section-on-mobile img {
+                max-width: 100%;
+            }
+
+            /* Add styles for the swipe-able image section */
+            .product-page-image-container {
+                display: flex;
+                overflow-x: auto;
+                scroll-snap-type: x mandatory;
+            }
+
+            .product-page-image-container img {
+                flex: 0 0 auto;
+                width: 100%;
+                scroll-snap-align: start;
+            }
+
+            /* Add styles for the product details section */
+            .product-details-div {
+                padding: 20px;
+            }
+
+            .place-in-cart-button {
+                background-color: black;
+                color: white;
+                border-radius: 100vmax;
+                cursor: pointer;
+                min-height: 3rem;
+                min-width: 13rem;
+                width: 100%;
+                font-size: 1rem;
+                letter-spacing: 0.025rem;
+                line-height: 1.25rem;
+                border: 1px solid black;
+                padding: 0.8125rem 2rem;
+            }
+
+            /*END PRODUCT PAGE*/
+
+        }
+
+        @media (min-width: 768px) {
+
+            header {
+                padding: 1.45rem;
+            }
+
+            .menu-bg {
+                transition: 0.15s;
+            }
+
+            .nav li a {
+                line-height: 1.2;
+            }
+
+            .email-us-header-text-span {
+                cursor: pointer;
+            }
+
+            .email-us-content-div {
+                position: absolute;
+                background-color: white;
+                width: 0;
+                top: 0;
+                right: 0;
+                height: 100vh;
+                transition: 0.3s ease;
+            }
+
+            .email-us-content-div-on-email-us-click {
+                width: 50vw;
+            }
+
+            .content {
+                padding: 5rem;
+            }
+
+            .feed-post-image {
+                object-position: center;
+                object-fit: cover;
+                height: 85vh;
+                width: 100%;
+            }
+
+            .feed-post-container {
+                padding: 3rem;
+            }
+
+            .feed-post-container .article-title {
+                font-size: 2rem;
+            }
+
+            .feed-post-link:hover .read-more {
+                box-shadow: 0 0 10px 4px rgba(255, 255, 255, 0.8);
+            }
+
+            .announcement-bar {
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+
+            .news-container {
+                padding-top: 140px;
+            }
+
+            /*BEGIN PRODUCT LISTING PAGE*/
+
+            .product-cards-container-div {
+                display: flex;
+                flex-wrap: wrap;
+                box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+            }
+
+            .product-card-div {
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+                display: block;
+                background-image: url('gradient-background.svg');
+                background-size: cover;
+                width: 25%;
+                height: 100%;
+                border: 0px solid green;
+            }
+
+            .product-card-img {
+                display: block;
+                width: 100%;
+            }
+
+            .product-card-a-pc {
+                color: black;
+                border: 0px solid lightblue;
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+                display: block;
+                position: relative;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                z-index: 1;
+            }
+
+            .product-card-a-pc * {
+                margin: 0;
+            }
+
+
+            .product-card-div:hover .product-card-left-chevron-button,
+            .product-card-div:hover .product-card-right-chevron-button {
+                visibility: visible;
+                opacity: 1;
+            }
+
+            .product-card-product-thumbnail-image-layer-div {
+                border: 0px solid green;
+                position: relative;
+            }
+
+            .product-card-img-container-div::-webkit-scrollbar {
+                display: none;
+            }
+
+            .product-card-img-container-div {
+                display: flex;
+                border: 0px solid greenyellow;
+                position: relative;
+                overflow-x: auto;
+                scroll-snap-type: x mandatory;
+            }
+
+            .product-card-product-thumbnail-image-layer-div img {
+                flex: 0 0 auto;
+                width: 100%;
+                scroll-snap-align: start;
+            }
+
+            .product-card-button-layer-div {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                border: 0px solid red;
+                box-sizing: border-box;
+            }
+
+            .product-card-button-layer-div-img-container-div {
+                border: 0px solid greenyellow;
+                height: 100%;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-items: center;
+            }
+
+            .product-card-invsibile-img {
+                visibility: hidden;
+                opacity: 0.5;
+                border: 0px solid black;
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            .left-chevron-button-container-div {
+                position: absolute;
+                top: 0;
+                left: 0;
+                border: 0px solid red;
+                display: flex;
+                align-items: center;
+                justify-items: center;
+                height: 100%;
+            }
+
+            .product-card-left-chevron-button {
+                background-color: transparent;
+                border-radius: 100vmax;
+                cursor: pointer;
+                visibility: hidden;
+                padding: 1rem;
+                border: 0px solid red;
+                box-sizing: border-box;
+                z-index: 2;
+                opacity: 0;
+                transition: opacity .3s cubic-bezier(.39, .575, .565, 1);
+            }
+
+            .right-chevron-button-container-div {
+                position: absolute;
+                border: 0px solid greenyellow;
+                display: flex;
+                align-items: center;
+                justify-items: center;
+                right: 0;
+                top: 0;
+                height: 100%;
+            }
+
+            .product-card-right-chevron-button {
+                background-color: transparent;
+                border-radius: 100vmax;
+                border: none;
+                cursor: pointer;
+                visibility: hidden;
+                padding: 1rem;
+                border: 0px solid red;
+                box-sizing: border-box;
+                z-index: 2;
+                opacity: 0;
+                transition: opacity 0.3s cubic-bezier(.39, .575, .565, 1);
+            }
+
+            .product-card-text-details-div {
+                display: block;
+                padding: 0;
+                border: 0px solid green;
+            }
+
+            .product-card-text-details-div-inner-div {
+                display: block;
+                border: 0px solid red;
+                padding: 1rem 1rem;
+            }
+
+            .product-card-product-name-h2 {
+                line-height: 1rem;
+                letter-spacing: 0.025rem;
+            }
+
+            .product-card-price {
+                border: 0px solid red;
+                display: block;
+            }
+
+            /*END PRODUCT LISTING PAGE*/
+
+            /*BEGIN PRODUCT PAGE*/
+            .left-hand-side-image-section {
+                max-width: 50%;
+            }
+
+            .left-hand-side-image-section img {
+                display: block;
+                width: 100%;
+            }
+
+            .right-hand-side-product-details-section {
+                position: fixed;
+                width: 50%;
+                left: 50%;
+                height: 100vh;
+                top: 50%;
+                display: flex;
+                justify-content: center;
+            }
+
+            .product-page-main {
+                display: flex;
+            }
+
+            .product-details-div {
+                width: 50%;
+            }
+
+            .place-in-cart-button-div {
+                border: 0px solid red;
+            }
+
+            .place-in-cart-button {
+                background-color: black;
+                color: white;
+                border-radius: 100vmax;
+                cursor: pointer;
+                min-height: 3rem;
+                min-width: 13rem;
+                width: 100%;
+                font-size: 1rem;
+                letter-spacing: 0.025rem;
+                line-height: 1.25rem;
+                border: 1px solid black;
+                padding: 0.8125rem 2rem;
+                transition: border 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s, box-shadow 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s,
+                    color 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s, background 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s,
+                    box-shadow 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
+            }
+
+            .place-in-cart-button:hover {
+                background-color: white;
+                color: black;
+                border: 1px solid black;
+            }
+
+            /*END PRODUCT PAGE*/
+        }
+
+        /* BEGIN MENU */
+        #menu {
+            z-index: 2;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        #menu-bar {
+            width: 45px;
+            margin-top: 0px;
+            margin-right: 0;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            padding-top: 0.8rem;
+            padding-right: 0.8rem;
+            padding-bottom: 0.8rem;
+            padding-left: 0.8rem;
+            cursor: pointer;
+        }
+
+        .bar {
+            height: 5px;
+            width: 100%;
+            display: block;
+            border-radius: 5px;
+        }
+
+        .bar-transition-effect {
+            transition: 0.0s ease;
+        }
+
+        picture {
+            display: block flex;
+            max-width: 100vw;
+            overflow: hidden;
+        }
+
+        header.scrolled .bar {
+            background-color: black;
+        }
+
+        .index-bar {
+            background-color: white;
+        }
+
+        .non-index-bar {
+            background-color: black;
+        }
+
+        #bar1 {
+            transform: translateY(-4px);
+        }
+
+        #bar3 {
+            transform: translateY(4px);
+        }
+
+        .nav {
+            position: absolute;
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.15s;
+            top: 100%;
+        }
+
+        .change-nav {
+            position: absolute;
+            visibility: visible;
+            opacity: 1;
+            top: 100%;
+            margin-top: 1px;
+            transition: opacity 0.15s;
+            transition-delay: 0.15s;
+            /*height: 100vh;
+  background-color: white;*/
+        }
+
+        hr {
+            border-top: 0px;
+            border-bottom: 1px solid #ececec;
+        }
+
+        .nav ul {
+            padding: 0 22px;
+        }
+
+        .nav li {
+            list-style: none;
+            padding: 12px 0;
+        }
+
+        .nav li a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .nav li a:hover {
+            text-decoration: underline;
+        }
+
+        .nav .menu-primary-list-item {
+            font-size: 24px;
+        }
+
+        .nav .menu-secondary-list-item a {
+            font-size: 20px;
+        }
+
+        .nav .menu-tertiary-list-item a {
+            font-size: 16px;
+        }
+
+        .menu-bg {
+            top: 100%;
+            left: 0;
+            position: absolute;
+            max-width: 100%;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+            height: 0;
+            /* Initially set height to 0 */
+            width: 100vw;
+            z-index: 1;
+            margin-top: 1px;
+            margin-right: 0;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            border: 0px;
+            background: white;
+        }
+
+        .change-bg {
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .change .bar {
+            background-color: black;
+        }
+
+        .change #bar1 {
+            transform: translateY(4px) rotateZ(-45deg);
+        }
+
+        .change #bar2 {
+            opacity: 0;
+        }
+
+        .change #bar3 {
+            transform: translateY(-6px) rotateZ(45deg);
+        }
+
+        .on-menu-click-header {
+            background-color: white;
+            color: black;
+            border-bottom: 1px solid #ececec;
+            transition: none;
+        }
+
+        .on-menu-click-header a:visited {
+            color: black;
+        }
+
+        /* END MENU */
+
+        main {
+            position: relative;
+        }
+
+        #brandnameanchor {
+            color: black;
+        }
+
+        .video-link-hero {
+            display: block;
+            position: relative;
+            text-decoration: none;
+            /* Remove default underline for links */
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            color: black;
+        }
+
+        video {
+            margin-bottom: 0;
+            padding: 0;
+        }
+
+        .feed-post-link {
+            text-decoration: none;
+            /* Remove default underline for links */
+            display: block flex;
+            align-items: flex-end;
+            justify-content: center;
+        }
+
+        .feed-post-container {
+            position: relative;
+            background-color: transparent;
+            border-radius: 0px;
+            position: absolute;
+            z-index: 1;
+        }
+
+        .feed-post-container .article-title {
+            font-family: 'HKGrotesk-SemiBold', Arial, sans-serif;
+            margin-bottom: 0;
+            color: white;
+            text-align: center;
+            text-shadow: 0 0 6px rgb(0 0 0 / 60%);
+        }
+
+        .feed-post-container .date {
+            font-size: 1.125rem;
+            color: white;
+            margin-bottom: 1rem;
+            text-align: center;
+            line-height: 2;
+            text-shadow: 0 0 6px rgb(0 0 0 / 60%);
+        }
+
+        .feed-post-container .read-more {
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+            text-align: center;
+            border: 1px solid white;
+            border-radius: 100vmax;
+            max-width: 15rem;
+            margin-top: 1.5rem;
+            margin-right: auto;
+            margin-bottom: 0;
+            margin-left: auto;
+            -webkit-backdrop-filter: blur(15px);
+            backdrop-filter: blur(15px);
+            padding: .8125rem 2rem;
+            box-sizing: border-box;
+            line-height: 1.25rem;
+            background-color: rgba(25, 17, 11, .2);
+            text-shadow: 0 0 6px rgb(0 0 0 / 60%);
+            transition: box-shadow 0.3s ease;
+            /* Add a smooth transition */
+        }
+
+        #videoContainer {
+            position: relative;
+            z-index: 0;
+            margin-bottom: 0;
+            margin: 0;
+            padding: 0;
+        }
+
+        #myVideo {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 61vh;
+            /* Adjust the height as needed */
+            z-index: -1;
+            /* Set a lower z-index for the video so that it appears behind other elements */
+        }
+
+        #videoOverlay {
+            position: absolute;
+            bottom: 60px;
+            /* Added space below the button */
+            width: 100%;
+            text-align: center;
+            color: white;
+            padding: 20px;
+            box-sizing: border-box;
+            /* Include padding in the width */
+            z-index: 1;
+            /* Set a higher z-index for the overlay to ensure it appears on top of the video */
+            max-width: 100vw;
+            margin-bottom: 0;
+        }
+
+        #collectionText {
+            font-family: 'HKGrotesk-SemiBold';
+            font-size: 1.2rem;
+            margin-bottom: 35px;
+            /* Increased space between text and button */
+            line-height: 1;
+            color: black;
+        }
+
+        #exploreButton {
+            background-color: rgba(255, 255, 255, 1);
+            border: 2px solid black;
+            border-radius: 20px;
+            /* Added rounded border */
+            color: black;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            /* Remove default underline for links */
+            z-index: 2;
+            /* Set a higher z-index for the button to ensure it appears on top of the video */
+            margin-bottom: 0;
+            padding: 10px 20px;
+            line-height: 1;
+        }
+
+        #playPauseBtn {
+            position: absolute;
+            bottom: 80px;
+            left: 20px;
+            font-size: 40px;
+            padding-left: 0;
+            padding-top: 0;
+            padding-right: 0;
+            padding-bottom: 0;
+            text-align: center;
+            margin-left: 0;
+            margin-bottom: 0;
+            align-items: center;
+            border: 0px solid white;
+            border-radius: 0px;
+            /* Added rounded border */
+            background-color: transparent;
+            cursor: pointer;
+            z-index: 2;
+            /* Set a higher z-index for the button to ensure it appears on top of the video */
+        }
+
+        .announcement-bar {
+            margin-top: 0;
+            margin-bottom: 0;
+            text-align: center;
+            background-color: #f6f5f3;
+            color: black;
+            font-size: 0.8rem;
+            letter-spacing: 0px;
+            line-height: 1.5;
+        }
+
+        .announcement-bar a {
+            color: black;
+            text-decoration: underline;
+        }
+
+        /* Define the color for normal links */
+        a,
+        a:visited {
+            text-decoration: none;
+            /* Remove underlines */
+        }
+
+        #sizelink {
+            color: #000000;
+        }
+
+        #sizelink:hover {
+            text-decoration: underline;
+        }
+
+        .men-pant-size-image img {
+            max-width: 100%;
+            max-height: auto;
+        }
+
+        .home-page-links {
+            color: black;
+        }
+
+        .home-page-links:hover {
+            text-decoration: underline;
+        }
+
+        .about-links {
+            max-width: 100vw;
+            margin-left: 0;
+            padding-left: 0;
+            background-color: white;
+            margin-top: 0.0rem;
+            margin-bottom: 0.0rem;
+            line-height: 1;
+        }
+
+        #page-title-p {
+            font-size: 1.2em;
+            padding-left: 0;
+            line-height: 2.0;
+            margin-bottom: 0;
+            margin-top: 0vw;
+            text-align: center;
+        }
+
+        .about-links ul {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .about-links li {
+            padding-left: 0vw;
+            line-height: 2.0;
+            margin-bottom: 0;
+        }
+
+        .about-links a {
+            display: flex;
+            font-size: 1em;
+            margin-top: 0;
+            color: black;
+            padding-left: 10vw;
+            margin-left: 0;
+            align-items: center;
+            margin-bottom: 0;
+        }
+
+        .about-links a:visited {
+            color: black;
+        }
+
+        .about-links a:hover {
+            background-color: #eaeded;
+        }
+
+        .about-links p {
+            font-size: 1em;
+            margin: 0;
+            padding-top: 0;
+            padding-left: 0vw;
+        }
+
+        footer {
+            background-color: #ffffff;
+            color: #333333;
+            padding: 0px;
+            text-align: center;
+            margin-top: 0rem;
+            line-height: 1;
+        }
+
+        footer ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        footer li {
+            margin: 0;
+            font-size: 1rem;
+            white-space: nowrap;
+            padding-top: 0;
+            padding-right: 0.0rem;
+            padding-bottom: 0;
+            padding-left: 0.0rem;
+        }
+
+        footer a {
+            text-decoration: none;
+        }
+
+        .footer-brand-name-div {
+            text-align: center;
+            font-size: 1.3rem;
+            color: black;
+            margin-top: 0;
+            margin-right: 0;
+            margin-bottom: 0;
+            padding-top: 0.8rem;
+            padding-bottom: 0.8rem;
+            padding-left: 0rem;
+            font-family: 'HKGrotesk-SemiBold', sans-serif;
+            letter-spacing: 1px;
+            line-height: 1;
+        }
+
+        .warning {
+            color: red;
+        }
+
+        .footer-first-ul-div {
+            margin-top: 0;
+            border-bottom: 0px solid #ececec;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-first-ul {
+            padding: 1rem;
+            /* border-bottom: 1px solid #ececec; */
+            text-align: left;
+        }
+
+        .footer-first-ul li a {
+            color: black;
+        }
+
+        .footer-last-ul {
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+        }
+
+        .footer-last-ul li {
+            display: inline;
+            padding-right: 0.5rem;
+            padding-left: 0.5rem;
+        }
+
+        .footer-last-ul li a {
+            color: #333333;
+        }
+
+        .page-container {
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .news-container {
+            padding-right: 20px;
+            padding-bottom: 20px;
+            padding-left: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .date {
+            font-size: 0.8em;
+            color: #777;
+            margin-bottom: 10px;
+        }
+
+        .article-title {
+            font-family: 'HKGrotesk-SemiBold', Arial, sans-serif;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .article-content {
+            font-size: 1.15rem;
+            margin-bottom: 15px;
+            line-height: 2;
+        }
+
+        .article-main-image {
+            max-width: 100%;
+        }
+
+        .article-content-image {
+            max-width: 100%;
+        }
+
+        .article-update {
+            font-family: 'HKGrotesk-Italic';
+        }
+
+        .news-container ol {
+            line-height: 2;
+            margin-bottom: 15px;
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .news-container .link-in-newswire-article {
+            color: #0366d6;
+            /* GitHub link color */
+            text-decoration: none;
+        }
+
+        .link-in-newswire-article:hover {
+            text-decoration: underline;
+        }
+
+        .about-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            color: black;
+            line-height: 1.6;
+        }
+
+        .about-container p {
+            margin-bottom: 20px;
+        }
+
+        .contact-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            color: black;
+            line-height: 1.6;
+        }
+
+        .contact-container .contact-email {
+            color: #0366d6;
+            /* GitHub link color */
+            text-decoration: none;
+        }
+
+        .contact-email:hover {
+            text-decoration: underline;
+        }
+
+        .twitter-share-link-generator-input-label {
+            line-height: 2;
+        }
+
+        .generated-link {
+            line-height: 2;
+        }
+
+        /* BEGIN FEEDBACK APP*/
+        .feedback-button {
+            display: inline-block;
+            background-color: #3498db;
+            color: #ffffff;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .feedback-button:hover {
+            background-color: #2980b9;
+        }
+
+        .border-solid-black {
+            border: 1px solid black;
+        }
+
+        /* END FEEDBACK APP*/
+
+        /* BEGIN PRODUCT LISTING PAGE */
+
+        .product-card-product-name-h2 {
+            font-size: 0.875rem;
+            letter-spacing: 0.025rem;
+            line-height: 1rem;
+            padding: 0.5rem 0;
+        }
+
+        .product-card-price {
+            font-size: 0.875rem;
+            letter-spacing: 0.025rem;
+            line-height: 1rem;
+        }
+
+        /* END PRODUCT LISTING PAGE */
+
+        /* BEGIN PRODUCT PAGE */
+
+        .product-page-product-details-overline-p {
+            font-size: 0.625rem;
+            line-height: 1rem;
+            margin: 0;
+        }
+
+        .product-page-product-name-p {
+            font-size: 1.125rem;
+            line-height: 1.5rem;
+            margin: 0 0 .25rem;
+        }
+
+        .product-page-product-price-p {
+            font-size: 0.875rem;
+            line-height: 1.25rem;
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+
+        /* END PRODUCT PAGE */
+    </style>
+</head>
+
+<body id="body-id">
+    <header id="myHeader" class="non-index-header">
+        <!-- BEGIN MENU -->
+        <div id="menu">
+            <div id="menu-bar" onclick="menuOnClick()">
+                <div id="bar1" class="bar non-index-bar"></div>
+                <div id="bar2" class="bar non-index-bar"></div>
+                <div id="bar3" class="bar non-index-bar"></div>
+            </div>
+            <nav class="nav" id="nav">
+                <ul>
+                    <li class="menu-primary-list-item"><a href="index.html">Home</a></li>
+                    <li class="menu-primary-list-item"><a href="newswire.html">Blog</a></li>
+                    <li class="menu-primary-list-item"><a href="product-listing.html">New</a></li>
+                    <!--<li><a href="#">RegalRack</a></li>
+                    <li><a href="#">Uplift</a></li>
+                    <li class="menu-primary-list-item"><a href="34-feedback-app.html">Feedback App</a></li>-->
+                </ul>
+                <hr>
+                <ul>
+                    <li class="menu-secondary-list-item"><a href="about-page.html">About us</a></li>
+                    <li class="menu-secondary-list-item"><a href="follow-us.html">Follow us</a></li>
+                    <li class="menu-secondary-list-item"><a href="contact-us.html">Contact us</a></li>
+                </ul>
+                <!--
+                <hr>
+                <ul>
+                    <li class="menu-tertiary-list-item"><a href="return-policy.html">Returns</a></li>
+                    <li class="menu-tertiary-list-item"><a href="shipping-policy.html">Shipping</a></li>
+                    <li class="menu-tertiary-list-item"><a href="privacy-policy.html">Privacy policy</a></li>
+                </ul>-->
+            </nav>
+        </div>
+        <div class="menu-bg" id="menu-bg"></div>
+        <!-- END MENU -->
+        <div class="header-hero-brand-name-span-container-div">
+            <span id="herobrandname-p-block"><a id="hero" href="index.html">POLYMATH HERO</a></span>
+        </div>
+    </header>
+
+    <main>
+        <div class="product-cards-container-div">
+
+
+
+
+
+
+            <div class="product-card-div">
+                <a class="product-card-a-pc" href="product-page.html" title="Product Page">
+                    <div class="product-card-product-thumbnail-image-layer-div">
+                        <div class="product-card-img-container-div">
+                            <img alt="alternate text" class="product-card-img"
+                                src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                            <img alt="alternate text" class="product-card-img2"
+                                src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                            <img alt="alternate text" class="product-card-img2"
+                                src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                        </div>
+                    </div>
+                    <div class="product-card-text-details-div">
+                        <div class="product-card-text-details-div-inner-div">
+                            <h2 class="product-card-product-name-h2">
+                                Cotton Polo
+                            </h2>
+                            <p class="product-card-price">$1,250.00</p>
+                        </div>
+                    </div>
+                </a>
+                <div class="product-card-button-layer-div">
+                    <div class="product-card-button-layer-div-img-container-div">
+                        <img alt="alternate text" class="product-card-invsibile-img"
+                            src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                    </div>
+                    <div class="left-chevron-button-container-div">
+                        <button class="product-card-left-chevron-button" onclick="scrollLeft()"><img
+                                src="svg/left-chevron.svg" alt="Left Chevron"></button>
+                    </div>
+                    <div class="right-chevron-button-container-div">
+                        <button class="product-card-right-chevron-button" onclick="scrollRight()"><img
+                                src="svg/right-chevron.svg" alt="Right Chevron"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card-div">
+                <a class="product-card-a-pc" href="product-page.html" title="Product Page">
+                    <div class="product-card-product-thumbnail-image-layer-div">
+                        <div class="product-card-img-container-div">
+                            <img alt="alternate text" class="product-card-img"
+                                src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                            <img alt="alternate text" class="product-card-img2"
+                                src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                            <img alt="alternate text" class="product-card-img2"
+                                src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                        </div>
+                    </div>
+                    <div class="product-card-text-details-div">
+                        <div class="product-card-text-details-div-inner-div">
+                            <h2 class="product-card-product-name-h2">
+                                Cotton Polo
+                            </h2>
+                            <p class="product-card-price">$1,250.00</p>
+                        </div>
+                    </div>
+                </a>
+                <div class="product-card-button-layer-div">
+                    <div class="product-card-button-layer-div-img-container-div">
+                        <img alt="alternate text" class="product-card-invsibile-img"
+                            src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                    </div>
+                    <div class="left-chevron-button-container-div">
+                        <button class="product-card-left-chevron-button" onclick="scrollLeft()"><img
+                                src="svg/left-chevron.svg" alt="Left Chevron"></button>
+                    </div>
+                    <div class="right-chevron-button-container-div">
+                        <button class="product-card-right-chevron-button" onclick="scrollRight()"><img
+                                src="svg/right-chevron.svg" alt="Right Chevron"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card-div">
+                <a class="product-card-a-pc" href="product-page.html" title="Product Page">
+                    <div class="product-card-product-thumbnail-image-layer-div">
+                        <div class="product-card-img-container-div">
+                            <img alt="alternate text" class="product-card-img"
+                                src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                            <img alt="alternate text" class="product-card-img2"
+                                src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                            <img alt="alternate text" class="product-card-img2"
+                                src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                        </div>
+                    </div>
+                    <div class="product-card-text-details-div">
+                        <div class="product-card-text-details-div-inner-div">
+                            <h2 class="product-card-product-name-h2">
+                                Cotton Polo
+                            </h2>
+                            <p class="product-card-price">$1,250.00</p>
+                        </div>
+                    </div>
+                </a>
+                <div class="product-card-button-layer-div">
+                    <div class="product-card-button-layer-div-img-container-div">
+                        <img alt="alternate text" class="product-card-invsibile-img"
+                            src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                    </div>
+                    <div class="left-chevron-button-container-div">
+                        <button class="product-card-left-chevron-button" onclick="scrollLeft()"><img
+                                src="svg/left-chevron.svg" alt="Left Chevron"></button>
+                    </div>
+                    <div class="right-chevron-button-container-div">
+                        <button class="product-card-right-chevron-button" onclick="scrollRight()"><img
+                                src="svg/right-chevron.svg" alt="Right Chevron"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card-div">
+                <a class="product-card-a-pc" href="product-page.html" title="Product Page">
+                    <div class="product-card-product-thumbnail-image-layer-div">
+                        <div class="product-card-img-container-div">
+                            <img alt="alternate text" class="product-card-img"
+                                src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                            <img alt="alternate text" class="product-card-img2"
+                                src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                            <img alt="alternate text" class="product-card-img2"
+                                src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                        </div>
+                    </div>
+                    <div class="product-card-text-details-div">
+                        <div class="product-card-text-details-div-inner-div">
+                            <h2 class="product-card-product-name-h2">
+                                Cotton Polo
+                            </h2>
+                            <p class="product-card-price">$1,250.00</p>
+                        </div>
+                    </div>
+                </a>
+                <div class="product-card-button-layer-div">
+                    <div class="product-card-button-layer-div-img-container-div">
+                        <img alt="alternate text" class="product-card-invsibile-img"
+                            src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                    </div>
+                    <div class="left-chevron-button-container-div">
+                        <button class="product-card-left-chevron-button" onclick="scrollLeft()"><img
+                                src="svg/left-chevron.svg" alt="Left Chevron"></button>
+                    </div>
+                    <div class="right-chevron-button-container-div">
+                        <button class="product-card-right-chevron-button" onclick="scrollRight()"><img
+                                src="svg/right-chevron.svg" alt="Right Chevron"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card-div">
+                <a class="product-card-a-pc" href="product-page.html" title="Product Page">
+                    <div class="product-card-product-thumbnail-image-layer-div">
+                        <div class="product-card-img-container-div">
+                            <img alt="alternate text" class="product-card-img"
+                                src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                            <img alt="alternate text" class="product-card-img2"
+                                src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                            <img alt="alternate text" class="product-card-img2"
+                                src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                        </div>
+                    </div>
+                    <div class="product-card-text-details-div">
+                        <div class="product-card-text-details-div-inner-div">
+                            <h2 class="product-card-product-name-h2">
+                                Cotton Polo
+                            </h2>
+                            <p class="product-card-price">$1,250.00</p>
+                        </div>
+                    </div>
+                </a>
+                <div class="product-card-button-layer-div">
+                    <div class="product-card-button-layer-div-img-container-div">
+                        <img alt="alternate text" class="product-card-invsibile-img"
+                            src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                    </div>
+                    <div class="left-chevron-button-container-div">
+                        <button class="product-card-left-chevron-button" onclick="scrollLeft()"><img
+                                src="svg/left-chevron.svg" alt="Left Chevron"></button>
+                    </div>
+                    <div class="right-chevron-button-container-div">
+                        <button class="product-card-right-chevron-button" onclick="scrollRight()"><img
+                                src="svg/right-chevron.svg" alt="Right Chevron"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card-div">
+                <a class="product-card-a-pc" href="product-page.html" title="Product Page">
+                    <div class="product-card-product-thumbnail-image-layer-div">
+                        <div class="product-card-img-container-div">
+                            <img alt="alternate text" class="product-card-img"
+                                src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                            <img alt="alternate text" class="product-card-img2"
+                                src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                            <img alt="alternate text" class="product-card-img2"
+                                src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                        </div>
+                    </div>
+                    <div class="product-card-text-details-div">
+                        <div class="product-card-text-details-div-inner-div">
+                            <h2 class="product-card-product-name-h2">
+                                Cotton Polo
+                            </h2>
+                            <p class="product-card-price">$1,250.00</p>
+                        </div>
+                    </div>
+                </a>
+                <div class="product-card-button-layer-div">
+                    <div class="product-card-button-layer-div-img-container-div">
+                        <img alt="alternate text" class="product-card-invsibile-img"
+                            src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                    </div>
+                    <div class="left-chevron-button-container-div">
+                        <button class="product-card-left-chevron-button" onclick="scrollLeft()"><img
+                                src="svg/left-chevron.svg" alt="Left Chevron"></button>
+                    </div>
+                    <div class="right-chevron-button-container-div">
+                        <button class="product-card-right-chevron-button" onclick="scrollRight()"><img
+                                src="svg/right-chevron.svg" alt="Right Chevron"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card-div">
+                <a class="product-card-a-pc" href="product-page.html" title="Product Page">
+                    <div class="product-card-product-thumbnail-image-layer-div">
+                        <div class="product-card-img-container-div">
+                            <img alt="alternate text" class="product-card-img"
+                                src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                            <img alt="alternate text" class="product-card-img2"
+                                src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                            <img alt="alternate text" class="product-card-img2"
+                                src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                        </div>
+                    </div>
+                    <div class="product-card-text-details-div">
+                        <div class="product-card-text-details-div-inner-div">
+                            <h2 class="product-card-product-name-h2">
+                                Cotton Polo
+                            </h2>
+                            <p class="product-card-price">$1,250.00</p>
+                        </div>
+                    </div>
+                </a>
+                <div class="product-card-button-layer-div">
+                    <div class="product-card-button-layer-div-img-container-div">
+                        <img alt="alternate text" class="product-card-invsibile-img"
+                            src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                    </div>
+                    <div class="left-chevron-button-container-div">
+                        <button class="product-card-left-chevron-button" onclick="scrollLeft()"><img
+                                src="svg/left-chevron.svg" alt="Left Chevron"></button>
+                    </div>
+                    <div class="right-chevron-button-container-div">
+                        <button class="product-card-right-chevron-button" onclick="scrollRight()"><img
+                                src="svg/right-chevron.svg" alt="Right Chevron"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card-div">
+                <a class="product-card-a-pc" href="product-page.html" title="Product Page">
+                    <div class="product-card-product-thumbnail-image-layer-div">
+                        <div class="product-card-img-container-div">
+                            <img alt="alternate text" class="product-card-img"
+                                src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                            <img alt="alternate text" class="product-card-img2"
+                                src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                            <img alt="alternate text" class="product-card-img2"
+                                src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                        </div>
+                    </div>
+                    <div class="product-card-text-details-div">
+                        <div class="product-card-text-details-div-inner-div">
+                            <h2 class="product-card-product-name-h2">
+                                Cotton Polo
+                            </h2>
+                            <p class="product-card-price">$1,250.00</p>
+                        </div>
+                    </div>
+                </a>
+                <div class="product-card-button-layer-div">
+                    <div class="product-card-button-layer-div-img-container-div">
+                        <img alt="alternate text" class="product-card-invsibile-img"
+                            src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                    </div>
+                    <div class="left-chevron-button-container-div">
+                        <button class="product-card-left-chevron-button" onclick="scrollLeft()"><img
+                                src="svg/left-chevron.svg" alt="Left Chevron"></button>
+                    </div>
+                    <div class="right-chevron-button-container-div">
+                        <button class="product-card-right-chevron-button" onclick="scrollRight()"><img
+                                src="svg/right-chevron.svg" alt="Right Chevron"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card-div">
+                <a class="product-card-a-pc" href="product-page.html" title="Product Page">
+                    <div class="product-card-product-thumbnail-image-layer-div">
+                        <div class="product-card-img-container-div">
+                            <img alt="alternate text" class="product-card-img"
+                                src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                            <img alt="alternate text" class="product-card-img2"
+                                src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                            <img alt="alternate text" class="product-card-img2"
+                                src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                        </div>
+                    </div>
+                    <div class="product-card-text-details-div">
+                        <div class="product-card-text-details-div-inner-div">
+                            <h2 class="product-card-product-name-h2">
+                                Cotton Polo
+                            </h2>
+                            <p class="product-card-price">$1,250.00</p>
+                        </div>
+                    </div>
+                </a>
+                <div class="product-card-button-layer-div">
+                    <div class="product-card-button-layer-div-img-container-div">
+                        <img alt="alternate text" class="product-card-invsibile-img"
+                            src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                    </div>
+                    <div class="left-chevron-button-container-div">
+                        <button class="product-card-left-chevron-button" onclick="scrollLeft()"><img
+                                src="svg/left-chevron.svg" alt="Left Chevron"></button>
+                    </div>
+                    <div class="right-chevron-button-container-div">
+                        <button class="product-card-right-chevron-button" onclick="scrollRight()"><img
+                                src="svg/right-chevron.svg" alt="Right Chevron"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card-div">
+                <a class="product-card-a-pc" href="product-page.html" title="Product Page">
+                    <div class="product-card-product-thumbnail-image-layer-div">
+                        <div class="product-card-img-container-div">
+                            <img alt="alternate text" class="product-card-img"
+                                src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                            <img alt="alternate text" class="product-card-img2"
+                                src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                            <img alt="alternate text" class="product-card-img2"
+                                src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                        </div>
+                    </div>
+                    <div class="product-card-text-details-div">
+                        <div class="product-card-text-details-div-inner-div">
+                            <h2 class="product-card-product-name-h2">
+                                Cotton Polo
+                            </h2>
+                            <p class="product-card-price">$1,250.00</p>
+                        </div>
+                    </div>
+                </a>
+                <div class="product-card-button-layer-div">
+                    <div class="product-card-button-layer-div-img-container-div">
+                        <img alt="alternate text" class="product-card-invsibile-img"
+                            src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                    </div>
+                    <div class="left-chevron-button-container-div">
+                        <button class="product-card-left-chevron-button" onclick="scrollLeft()"><img
+                                src="svg/left-chevron.svg" alt="Left Chevron"></button>
+                    </div>
+                    <div class="right-chevron-button-container-div">
+                        <button class="product-card-right-chevron-button" onclick="scrollRight()"><img
+                                src="svg/right-chevron.svg" alt="Right Chevron"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card-div">
+                <a class="product-card-a-pc" href="product-page.html" title="Product Page">
+                    <div class="product-card-product-thumbnail-image-layer-div">
+                        <div class="product-card-img-container-div">
+                            <img alt="alternate text" class="product-card-img"
+                                src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                            <img alt="alternate text" class="product-card-img2"
+                                src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                            <img alt="alternate text" class="product-card-img2"
+                                src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                        </div>
+                    </div>
+                    <div class="product-card-text-details-div">
+                        <div class="product-card-text-details-div-inner-div">
+                            <h2 class="product-card-product-name-h2">
+                                Cotton Polo
+                            </h2>
+                            <p class="product-card-price">$1,250.00</p>
+                        </div>
+                    </div>
+                </a>
+                <div class="product-card-button-layer-div">
+                    <div class="product-card-button-layer-div-img-container-div">
+                        <img alt="alternate text" class="product-card-invsibile-img"
+                            src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                    </div>
+                    <div class="left-chevron-button-container-div">
+                        <button class="product-card-left-chevron-button" onclick="scrollLeft()"><img
+                                src="svg/left-chevron.svg" alt="Left Chevron"></button>
+                    </div>
+                    <div class="right-chevron-button-container-div">
+                        <button class="product-card-right-chevron-button" onclick="scrollRight()"><img
+                                src="svg/right-chevron.svg" alt="Right Chevron"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card-div">
+                <a class="product-card-a-pc" href="product-page.html" title="Product Page">
+                    <div class="product-card-product-thumbnail-image-layer-div">
+                        <div class="product-card-img-container-div">
+                            <img alt="alternate text" class="product-card-img"
+                                src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                            <img alt="alternate text" class="product-card-img2"
+                                src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                            <img alt="alternate text" class="product-card-img2"
+                                src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                        </div>
+                    </div>
+                    <div class="product-card-text-details-div">
+                        <div class="product-card-text-details-div-inner-div">
+                            <h2 class="product-card-product-name-h2">
+                                Cotton Polo
+                            </h2>
+                            <p class="product-card-price">$1,250.00</p>
+                        </div>
+                    </div>
+                </a>
+                <div class="product-card-button-layer-div">
+                    <div class="product-card-button-layer-div-img-container-div">
+                        <img alt="alternate text" class="product-card-invsibile-img"
+                            src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                    </div>
+                    <div class="left-chevron-button-container-div">
+                        <button class="product-card-left-chevron-button" onclick="scrollLeft()"><img
+                                src="svg/left-chevron.svg" alt="Left Chevron"></button>
+                    </div>
+                    <div class="right-chevron-button-container-div">
+                        <button class="product-card-right-chevron-button" onclick="scrollRight()"><img
+                                src="svg/right-chevron.svg" alt="Right Chevron"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card-div">
+                <a class="product-card-a-pc" href="product-page.html" title="Product Page">
+                    <div class="product-card-product-thumbnail-image-layer-div">
+                        <div class="product-card-img-container-div">
+                            <img alt="alternate text" class="product-card-img"
+                                src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                            <img alt="alternate text" class="product-card-img2"
+                                src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                            <img alt="alternate text" class="product-card-img2"
+                                src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                        </div>
+                    </div>
+                    <div class="product-card-text-details-div">
+                        <div class="product-card-text-details-div-inner-div">
+                            <h2 class="product-card-product-name-h2">
+                                Cotton Polo
+                            </h2>
+                            <p class="product-card-price">$1,250.00</p>
+                        </div>
+                    </div>
+                </a>
+                <div class="product-card-button-layer-div">
+                    <div class="product-card-button-layer-div-img-container-div">
+                        <img alt="alternate text" class="product-card-invsibile-img"
+                            src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                    </div>
+                    <div class="left-chevron-button-container-div">
+                        <button class="product-card-left-chevron-button" onclick="scrollLeft()"><img
+                                src="svg/left-chevron.svg" alt="Left Chevron"></button>
+                    </div>
+                    <div class="right-chevron-button-container-div">
+                        <button class="product-card-right-chevron-button" onclick="scrollRight()"><img
+                                src="svg/right-chevron.svg" alt="Right Chevron"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card-div">
+                <a class="product-card-a-pc" href="product-page.html" title="Product Page">
+                    <div class="product-card-product-thumbnail-image-layer-div">
+                        <div class="product-card-img-container-div">
+                            <img alt="alternate text" class="product-card-img"
+                                src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                            <img alt="alternate text" class="product-card-img2"
+                                src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                            <img alt="alternate text" class="product-card-img2"
+                                src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                        </div>
+                    </div>
+                    <div class="product-card-text-details-div">
+                        <div class="product-card-text-details-div-inner-div">
+                            <h2 class="product-card-product-name-h2">
+                                Cotton Polo
+                            </h2>
+                            <p class="product-card-price">$1,250.00</p>
+                        </div>
+                    </div>
+                </a>
+                <div class="product-card-button-layer-div">
+                    <div class="product-card-button-layer-div-img-container-div">
+                        <img alt="alternate text" class="product-card-invsibile-img"
+                            src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                    </div>
+                    <div class="left-chevron-button-container-div">
+                        <button class="product-card-left-chevron-button" onclick="scrollLeft()"><img
+                                src="svg/left-chevron.svg" alt="Left Chevron"></button>
+                    </div>
+                    <div class="right-chevron-button-container-div">
+                        <button class="product-card-right-chevron-button" onclick="scrollRight()"><img
+                                src="svg/right-chevron.svg" alt="Right Chevron"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card-div">
+                <a class="product-card-a-pc" href="product-page.html" title="Product Page">
+                    <div class="product-card-product-thumbnail-image-layer-div">
+                        <div class="product-card-img-container-div">
+                            <img alt="alternate text" class="product-card-img"
+                                src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                            <img alt="alternate text" class="product-card-img2"
+                                src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                            <img alt="alternate text" class="product-card-img2"
+                                src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                        </div>
+                    </div>
+                    <div class="product-card-text-details-div">
+                        <div class="product-card-text-details-div-inner-div">
+                            <h2 class="product-card-product-name-h2">
+                                Cotton Polo
+                            </h2>
+                            <p class="product-card-price">$1,250.00</p>
+                        </div>
+                    </div>
+                </a>
+                <div class="product-card-button-layer-div">
+                    <div class="product-card-button-layer-div-img-container-div">
+                        <img alt="alternate text" class="product-card-invsibile-img"
+                            src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                    </div>
+                    <div class="left-chevron-button-container-div">
+                        <button class="product-card-left-chevron-button" onclick="scrollLeft()"><img
+                                src="svg/left-chevron.svg" alt="Left Chevron"></button>
+                    </div>
+                    <div class="right-chevron-button-container-div">
+                        <button class="product-card-right-chevron-button" onclick="scrollRight()"><img
+                                src="svg/right-chevron.svg" alt="Right Chevron"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card-div">
+                <a class="product-card-a-pc" href="product-page.html" title="Product Page">
+                    <div class="product-card-product-thumbnail-image-layer-div">
+                        <div class="product-card-img-container-div">
+                            <img alt="alternate text" class="product-card-img"
+                                src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                            <img alt="alternate text" class="product-card-img2"
+                                src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                            <img alt="alternate text" class="product-card-img2"
+                                src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                        </div>
+                    </div>
+                    <div class="product-card-text-details-div">
+                        <div class="product-card-text-details-div-inner-div">
+                            <h2 class="product-card-product-name-h2">
+                                Cotton Polo
+                            </h2>
+                            <p class="product-card-price">$1,250.00</p>
+                        </div>
+                    </div>
+                </a>
+                <div class="product-card-button-layer-div">
+                    <div class="product-card-button-layer-div-img-container-div">
+                        <img alt="alternate text" class="product-card-invsibile-img"
+                            src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                    </div>
+                    <div class="left-chevron-button-container-div">
+                        <button class="product-card-left-chevron-button" onclick="scrollLeft()"><img
+                                src="svg/left-chevron.svg" alt="Left Chevron"></button>
+                    </div>
+                    <div class="right-chevron-button-container-div">
+                        <button class="product-card-right-chevron-button" onclick="scrollRight()"><img
+                                src="svg/right-chevron.svg" alt="Right Chevron"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card-div">
+                <a class="product-card-a-pc" href="product-page.html" title="Product Page">
+                    <div class="product-card-product-thumbnail-image-layer-div">
+                        <div class="product-card-img-container-div">
+                            <img alt="alternate text" class="product-card-img"
+                                src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                            <img alt="alternate text" class="product-card-img2"
+                                src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                            <img alt="alternate text" class="product-card-img2"
+                                src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                        </div>
+                    </div>
+                    <div class="product-card-text-details-div">
+                        <div class="product-card-text-details-div-inner-div">
+                            <h2 class="product-card-product-name-h2">
+                                Cotton Polo
+                            </h2>
+                            <p class="product-card-price">$1,250.00</p>
+                        </div>
+                    </div>
+                </a>
+                <div class="product-card-button-layer-div">
+                    <div class="product-card-button-layer-div-img-container-div">
+                        <img alt="alternate text" class="product-card-invsibile-img"
+                            src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                    </div>
+                    <div class="left-chevron-button-container-div">
+                        <button class="product-card-left-chevron-button" onclick="scrollLeft()"><img
+                                src="svg/left-chevron.svg" alt="Left Chevron"></button>
+                    </div>
+                    <div class="right-chevron-button-container-div">
+                        <button class="product-card-right-chevron-button" onclick="scrollRight()"><img
+                                src="svg/right-chevron.svg" alt="Right Chevron"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card-div">
+                <a class="product-card-a-pc" href="product-page.html" title="Product Page">
+                    <div class="product-card-product-thumbnail-image-layer-div">
+                        <div class="product-card-img-container-div">
+                            <img alt="alternate text" class="product-card-img"
+                                src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                            <img alt="alternate text" class="product-card-img2"
+                                src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                            <img alt="alternate text" class="product-card-img2"
+                                src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                        </div>
+                    </div>
+                    <div class="product-card-text-details-div">
+                        <div class="product-card-text-details-div-inner-div">
+                            <h2 class="product-card-product-name-h2">
+                                Cotton Polo
+                            </h2>
+                            <p class="product-card-price">$1,250.00</p>
+                        </div>
+                    </div>
+                </a>
+                <div class="product-card-button-layer-div">
+                    <div class="product-card-button-layer-div-img-container-div">
+                        <img alt="alternate text" class="product-card-invsibile-img"
+                            src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                    </div>
+                    <div class="left-chevron-button-container-div">
+                        <button class="product-card-left-chevron-button" onclick="scrollLeft()"><img
+                                src="svg/left-chevron.svg" alt="Left Chevron"></button>
+                    </div>
+                    <div class="right-chevron-button-container-div">
+                        <button class="product-card-right-chevron-button" onclick="scrollRight()"><img
+                                src="svg/right-chevron.svg" alt="Right Chevron"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card-div">
+                <a class="product-card-a-pc" href="product-page.html" title="Product Page">
+                    <div class="product-card-product-thumbnail-image-layer-div">
+                        <div class="product-card-img-container-div">
+                            <img alt="alternate text" class="product-card-img"
+                                src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                            <img alt="alternate text" class="product-card-img2"
+                                src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                            <img alt="alternate text" class="product-card-img2"
+                                src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                        </div>
+                    </div>
+                    <div class="product-card-text-details-div">
+                        <div class="product-card-text-details-div-inner-div">
+                            <h2 class="product-card-product-name-h2">
+                                Cotton Polo
+                            </h2>
+                            <p class="product-card-price">$1,250.00</p>
+                        </div>
+                    </div>
+                </a>
+                <div class="product-card-button-layer-div">
+                    <div class="product-card-button-layer-div-img-container-div">
+                        <img alt="alternate text" class="product-card-invsibile-img"
+                            src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                    </div>
+                    <div class="left-chevron-button-container-div">
+                        <button class="product-card-left-chevron-button" onclick="scrollLeft()"><img
+                                src="svg/left-chevron.svg" alt="Left Chevron"></button>
+                    </div>
+                    <div class="right-chevron-button-container-div">
+                        <button class="product-card-right-chevron-button" onclick="scrollRight()"><img
+                                src="svg/right-chevron.svg" alt="Right Chevron"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card-div">
+                <a class="product-card-a-pc" href="product-page.html" title="Product Page">
+                    <div class="product-card-product-thumbnail-image-layer-div">
+                        <div class="product-card-img-container-div">
+                            <img alt="alternate text" class="product-card-img"
+                                src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                            <img alt="alternate text" class="product-card-img2"
+                                src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                            <img alt="alternate text" class="product-card-img2"
+                                src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                        </div>
+                    </div>
+                    <div class="product-card-text-details-div">
+                        <div class="product-card-text-details-div-inner-div">
+                            <h2 class="product-card-product-name-h2">
+                                Cotton Polo
+                            </h2>
+                            <p class="product-card-price">$1,250.00</p>
+                        </div>
+                    </div>
+                </a>
+                <div class="product-card-button-layer-div">
+                    <div class="product-card-button-layer-div-img-container-div">
+                        <img alt="alternate text" class="product-card-invsibile-img"
+                            src="louis-vuitton-cotton-polo--HQN33WAUR605_PM2_Front view.png">
+                    </div>
+                    <div class="left-chevron-button-container-div">
+                        <button class="product-card-left-chevron-button" onclick="scrollLeft()"><img
+                                src="svg/left-chevron.svg" alt="Left Chevron"></button>
+                    </div>
+                    <div class="right-chevron-button-container-div">
+                        <button class="product-card-right-chevron-button" onclick="scrollRight()"><img
+                                src="svg/right-chevron.svg" alt="Right Chevron"></button>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+        </div>
+    </main>
+
+    <!--
+    <footer>
+        <div class="footer-brand-name-div">
+            <p><a id="brandnameanchor" href="index.html">POLYMATH HERO</a></p>
+        </div>
+        <ul class="footer-first-ul">
+            <div class="footer-first-ul-div">
+            <li><a href="newswire.html">Newswire</a></li>
+            <li><a href="about-page.html">About Polymath Hero</a></li>
+            <li><a href="follow-us.html">Follow Us</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <!- -<li><a href="selection.html"><span class="warning">&#9888; WARNING!</span> Selection</a></li>- ->
+        </div>
+        </ul>
+        <ul class="footer-last-ul">
+            <li><a href="return-policy.html">Returns</a></li>
+            <li><a href="shipping-policy.html">Shipping</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        </ul>
+    </footer>
+-->
+    <script defer src="script.js"></script>
+    <script>
+        window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
+
+</body>
+
+</html>

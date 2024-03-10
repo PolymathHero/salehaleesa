@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POLYMATH HERO Official International Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      input {
+        margin-bottom: 10px;
+        padding: 8px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+  
+      button {
+        padding: 10px;
+        background-color: #1da1f2;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+  
+      #generatedLink {
+        margin-top: 15px;
+        padding: 10px;
+        background-color: #f0f0f0;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+    </style>
+</head>
+
+<body id="body-id">
+    <header>
+        <!-- BEGIN MENU -->
+        <div id="menu">
+            <div id="menu-bar" onclick="menuOnClick()">
+              <div id="bar1" class="bar"></div>
+              <div id="bar2" class="bar"></div>
+              <div id="bar3" class="bar"></div>
+            </div>
+            <nav class="nav" id="nav">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="newswire.html">Blog</a></li>
+                <li><a href="https://ko-fi.com/chicaffair/shop">Products</a></li>
+                <!--<li><a href="#">RegalRack</a></li>
+                <li><a href="#">Uplift</a></li>-->
+                </ul>
+                <hr>
+                <ul>
+                <li class="menu-secondary-list-item"><a href="about-page.html">About us</a></li>
+                <li class="menu-secondary-list-item"><a href="follow-us.html">Follow us</a></li>
+                <li class="menu-secondary-list-item"><a href="contact-us.html">Contact us</a></li>
+            </ul>
+            <hr>
+            <ul>
+                <li class="menu-tertiary-list-item"><a href="return-policy.html">Returns</a></li>
+                <li class="menu-tertiary-list-item"><a href="shipping-policy.html">Shipping</a></li>
+                <li class="menu-tertiary-list-item"><a href="privacy-policy.html">Privacy policy</a></li>
+              </ul>
+            </nav> 
+          </div>
+
+          <div class="menu-bg" id="menu-bg"></div>
+          
+          <!-- END MENU -->
+
+            <p id="herobrandname-p-block"><a id="hero" href="index.html">POLYMATH HERO</a></p>
+        </header>
+
+        <h2>Twitter Share Link Generator</h2>
+
+        <label class="twitter-share-link-generator-input-label" for="articleTitle">Enter the article title:</label>
+        <input type="text" id="articleTitle" placeholder="Celebrating the Hamburger Menu Launch">
+      
+        <label class="twitter-share-link-generator-input-label" for="articleUrl">Enter the article URL:</label>
+        <input type="text" id="articleUrl" placeholder="https://www.polymathhero.com/newswire.html#article-1349">
+      
+        <button onclick="generateTwitterShareLink()">Generate Twitter Share Link</button>
+
+        <div class="generated-link" id="generatedLink"></div>
+
+        <script>
+            function generateTwitterShareLink() {
+              const articleTitle = encodeURIComponent(document.getElementById('articleTitle').value);
+              const articleUrl = encodeURIComponent(document.getElementById('articleUrl').value);
+        
+              const twitterShareUrl = `https://twitter.com/intent/tweet?url=${articleUrl}&text=${articleTitle}`;
+                    document.getElementById('generatedLink').innerText = twitterShareUrl;
+            }
+          </script>
+
+                             <!-- BEGIN CALCULATE #MENU-BG HEIGHT BY REDUCING HEADER HEIGHT FROM 100VH-->
+                             <script>
+                                // Function to adjust menu-bg height based on header height
+                                function adjustMenuBgHeight() {
+                                  var headerHeight = document.querySelector('header').offsetHeight;
+                                  document.getElementById('menu-bg').style.height = `calc(100vh - ${headerHeight}px)`;
+                                }
+                              
+                                // Call the function on page load
+                                window.addEventListener('load', adjustMenuBgHeight);
+                              
+                                // Call the function on window resize to handle responsive design
+                                window.addEventListener('resize', adjustMenuBgHeight);
+                              </script>
+                            <!-- END CALCULATE #MENU-BG HEIGHT BY REDUCING HEADER HEIGHT FROM 100VH-->
+
+        <!-- BEGIN MENU SCRIPT-->
+        <script>function menuOnClick() {      
+              document.getElementById("menu-bar").classList.toggle("change");
+              document.getElementById("nav").classList.toggle("change-nav");
+              document.getElementById("menu-bg").classList.toggle("change-bg");
+
+                  // Toggle menu-opened class on body
+    document.body.classList.toggle("menu-opened");
+            }</script>
+            <!-- END MENU SCRIPT-->
+              
+<script>
+    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  </script>
+  <script defer src="/_vercel/insights/script.js"></script>
+  
+</body>
+</html>
